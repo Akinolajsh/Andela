@@ -56,5 +56,5 @@ const Container = styled.div<{ bg: string }>`
   justify-content: center;
   align-items: center;
   color: white;
-  margin: 5px 15px;
+  margin: 5px 10px;
 `;

@@ -7,7 +7,7 @@ const Layout = () => {
     <div>
       <MainHeader/>
       <Outlet/>
-      <LandingPage/>
+      {/* <LandingPage/> */}
       <Footer/>
     </div>
   )

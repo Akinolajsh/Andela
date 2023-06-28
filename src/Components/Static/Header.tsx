@@ -4,6 +4,7 @@ import img from "../../Assets/LogoWhite.png";
 import GlobalButton from "../reUse/GlobalButton";
 import { FaAngleDown } from "react-icons/fa";
 import img2 from "../../Assets/Logo.svg"
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [scroll, setScroll] = useState<boolean>(false);
@@ -26,12 +27,12 @@ const Header = () => {
         <Main>
           <Logo src={img2} />
           <NavHolder>
-            <Nav>For Technology Experts</Nav>
-            <Nav>Business</Nav>
-            <Nav>Enterprise</Nav>
+            <Nav to="/page1">For Technology Experts</Nav>
+            <Nav to="">Business</Nav>
+            <Nav to="">Enterprise</Nav>
           </NavHolder>
           <ButtonHolder>
-            <Nav>Apply for Jobs</Nav>
+            <Nav to="">Apply for Jobs</Nav>
             <GlobalButton
               width="130px"
               height="35px"
@@ -50,12 +51,12 @@ const Header = () => {
         <Main>
           <Logo src={img} />
           <NavHolder>
-            <Nav>For Technology Experts</Nav>
-            <Nav>Business</Nav>
-            <Nav>Enterprise</Nav>
+            <Nav to="/page1">For Technology Experts</Nav>
+            <Nav to="">Business</Nav>
+            <Nav to="">Enterprise</Nav>
           </NavHolder>
           <ButtonHolder>
-            <Nav>Apply for Jobs</Nav>
+            <Nav to="">Apply for Jobs</Nav>
             <GlobalButton
               width="130px"
               height="35px"
@@ -90,7 +91,10 @@ const ButtonHolder = styled.div`
   align-items: center;
   width: 350px;
 `;
-const Nav = styled.div``;
+const Nav = styled(Link)`
+  text-decoration: none;
+`;
+
 const NavHolder = styled.div`
   display: flex;
   width: 450px;

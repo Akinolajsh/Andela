@@ -10,6 +10,7 @@ import Components6 from './Components6'
 import Components7 from './Components7'
 import Props2 from '../Components/reUse/Props2'
 import Components8 from './Components8'
+import Component9 from './Component9'
 
 const LandingPage = () => {
   return (
@@ -24,6 +25,7 @@ const LandingPage = () => {
       <Components6/>
       <Components7/>
       <Components8/>
+      <Component9/>
     </div>
   )
 }
