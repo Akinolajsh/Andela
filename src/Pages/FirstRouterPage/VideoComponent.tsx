@@ -137,6 +137,5 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: green;
-  /* background-color: #173b3f; */
+  background-color: #173b3f;
 `;
