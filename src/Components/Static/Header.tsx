@@ -4,7 +4,7 @@ import img from "../../Assets/LogoWhite.png";
 import GlobalButton from "../reUse/GlobalButton";
 import { FaAngleDown } from "react-icons/fa";
 import img2 from "../../Assets/Logo.svg"
-import { Link, NavLink } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Header = () => {
   const [scroll, setScroll] = useState<boolean>(false);
@@ -99,18 +99,15 @@ const NavHolder = styled.div`
   display: flex;
   width: 450px;
   justify-content: space-between;
-  /* background-color: #56c870; */
 `;
 const Logo = styled.img`
   width: 200px;
-  /* height: 80px; */
 `;
 const Main = styled.div`
   width: 90%;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
   align-items: center;
 `;
 const Container = styled.div`
@@ -125,4 +122,5 @@ const Container = styled.div`
   position: fixed;
   top: 60px;
   z-index: 10;
+  text-decoration: none;
 `;

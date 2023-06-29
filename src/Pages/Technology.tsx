@@ -5,6 +5,9 @@ import SliderPart from "./FirstRouterPage/SliderPart";
 import VideoComponent from "./FirstRouterPage/VideoComponent";
 import ImageComponent from "./FirstRouterPage/ImageComponent";
 import Component9 from "./HomePage/Component9";
+import WriteUp from "./FirstRouterPage/WriteUp";
+import Community from "./FirstRouterPage/Community";
+import ImageBlur from "./FirstRouterPage/ImageBlur";
 
 const Technology = () => {
   return (
@@ -12,16 +15,16 @@ const Technology = () => {
       <HeroPage />
       <SliderPart/>
       <VideoComponent/>
+      <WriteUp/>
       <ImageComponent/>
+      <Community/>
       <Component9/>
+      <ImageBlur/>
+
     </div>
   );
 };
 
 export default Technology;
 
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: red;
-`;
+

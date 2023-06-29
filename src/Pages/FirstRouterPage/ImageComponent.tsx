@@ -26,10 +26,8 @@ const Main = styled.div`
 width: 90%;
 display: flex;
 flex-wrap: wrap;
-/* flex-direction: column; */
 align-items: center;
 justify-content: center;
-/* background-color: red; */
 `;
 const Container = styled.div`
 width: 100%;
@@ -37,5 +35,4 @@ height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-/* background-color: gray; */
 `;

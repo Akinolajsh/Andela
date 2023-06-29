@@ -68,30 +68,25 @@ const Text = styled.div`
 `;
 const Title = styled.div`
   font-size: 30px;
+  margin-top: 10px;
 `;
 const TextHolder = styled.div``;
 const Right = styled.div`
   width: 580px;
   margin-left: 20px;
   height: 100%;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 `;
 const Img = styled.img`
-  /* width: 500px;
-height: 400px; */
 `;
 const Main = styled.div<{rr: string}>`
+margin-top: 10px;
   width: 100%;
-  height: 100%;
+  height: 95%;
   display: flex;
   flex-direction: ${({rr})=>rr? "row-reverse": "row"};
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  /* background-color: greenyellow; */
-  /* align-items: center; */
 `;
 const Container = styled.div`
   width: 100%;
