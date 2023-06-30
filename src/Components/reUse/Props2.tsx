@@ -22,7 +22,6 @@ const Props2: React.FC<iProps2> = ({ title, writeup, bg, img }) => {
             brad="50px"
             title="Learn More"
             bd="1px solid white"
-            color="white"
           />
         </Left>
         <Img src={img} />

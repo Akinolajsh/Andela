@@ -2,6 +2,7 @@ import {createBrowserRouter} from "react-router-dom"
 import Layout from "../Components/Common/Layout"
 import Technology from "../Pages/Technology"
 import LandingPage from "../Pages/LandingPage"
+import Enterprise from "../Pages/Enterprise"
 
 export const mainRouter = createBrowserRouter([
     {
@@ -14,8 +15,13 @@ export const mainRouter = createBrowserRouter([
             },
             {
                 index: true,
-                path: "page1",
+                path: "technology",
                 element: <Technology/>
+            },
+            {
+                index: true,
+                path: "enterprise",
+                element: <Enterprise/>
             },
         ]
     }

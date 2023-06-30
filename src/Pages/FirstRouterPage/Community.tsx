@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../../Assets/shutterstock_1862846512-scaled.jpg"
+import img from "../../Assets/shutterstock_1241581108-1-1024x683.jpg"
 import GlobalButton from "../../Components/reUse/GlobalButton";
 
 const Data: any = [
@@ -71,6 +71,7 @@ z-index: 1;
 const Holder = styled.div`
 display: flex;
 margin-top: 30px;
+/* background-color: blue; */
 `
 
 const Text = styled.div`
@@ -79,7 +80,9 @@ font-size: 18px;
 width: 500px;
 `
 
-const Hold = styled.div``
+const Hold = styled.div`
+/* background-color: yellow; */
+`
 
 const Icon = styled.div`
 height: 60px;
@@ -93,17 +96,19 @@ border: 1px solid white;
 align-items: center;
 justify-content: center;
 border-radius: 50px;
+/* background-color: red; */
 `
 
 const STitle = styled.div`
 font-size: 15px;
 font-weight: 700;
+margin-top:10px ;
 `
 const SubTitle = styled.div`
 font-size: 18px;
 word-spacing: 1px;
 width: 50%;
-margin: 10px 0;
+margin: 0px 0;
 `
 
 const Title = styled.div`
@@ -111,6 +116,7 @@ font-size: 60px;
 width: 60%;
 line-height: 1.15;
 font-style: italic;
+margin-bottom: 20px;
 `
 
 const Right = styled.div`
@@ -118,6 +124,7 @@ const Right = styled.div`
   color: white;
   width: 50%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   /* background-color: red; */
 `;
@@ -130,7 +137,7 @@ color: white;
 
 const Main = styled.div`
   width: 90%;
-  height: 400px;
+  height: 450px;
   display: flex;
   margin: 20px 0;
   justify-content: space-between;

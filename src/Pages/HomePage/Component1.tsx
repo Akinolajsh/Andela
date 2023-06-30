@@ -38,6 +38,7 @@ const Component1 = () => {
             <Img src={img4}/>
             <Img src={img5}/>
          </Holder>
+         
           </Main1>
         </Bottom>
       </Container>

@@ -8,10 +8,9 @@ interface iBtn {
   brad?: string;
   title?: string;
   bd?: string;
-  color?: string;
 }
 
-const GlobalButton: React.FC<iBtn> = ({ width, height, bg, brad, title, bd, color }) => {
+const GlobalButton: React.FC<iBtn> = ({ width, height, bg, brad, title, bd }) => {
   return (
     <div>
       <Container
@@ -20,7 +19,6 @@ const GlobalButton: React.FC<iBtn> = ({ width, height, bg, brad, title, bd, colo
         bg={`${bg}`}
         brad={`${brad}`}
         bd={`${bd}`}
-        color={`${color}`}
       >
         {title}
       </Container>
@@ -36,7 +34,6 @@ const Container = styled.div<{
   bg: string;
   brad: string;
   bd?: string;
-  color?: string;
 }>`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
@@ -46,7 +43,7 @@ const Container = styled.div<{
   justify-content: center;
   align-items: center;
   transition: all 400ms;
-  color: ${({ color }) => color};
+  color: black;
   font-weight: 600;
   border: ${({bd})=> bd};
   :hover {

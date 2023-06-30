@@ -55,7 +55,6 @@ const SmallText = styled.div`
 `;
 const Main = styled.div`
   margin-top: 70px;
-  /* background-color: bisque; */
   width: 95%;
   height: 400px;
   left: 0;
@@ -75,6 +74,5 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: -5; */
   color: white;
 `;

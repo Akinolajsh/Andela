@@ -23,13 +23,13 @@ const Header = () => {
     <div>
      {
       scroll ? (
-        <Container style={{backgroundColor: "#fbfbfb", color:"black", transition: "all 500ms"}}>
+        <Container style={{backgroundColor: "#fbfbfb", color:"black", transition: "all 500ms", textDecoration: "none"}}>
         <Main>
           <Logo src={img2} />
           <NavHolder>
-            <Nav to="/page1">For Technology Experts</Nav>
+            <Nav to="/technology">For Technology Experts</Nav>
             <Nav to="">Business</Nav>
-            <Nav to="">Enterprise</Nav>
+            <Nav to="/enterprise">Enterprise</Nav>
           </NavHolder>
           <ButtonHolder>
             <Nav to="">Apply for Jobs</Nav>
@@ -47,13 +47,13 @@ const Header = () => {
         </Main>
       </Container>
       ):(
-        <Container>
+        <Container style={{color:"white", transition: "all 500ms"}} >
         <Main>
           <Logo src={img} />
           <NavHolder>
-            <Nav to="/page1">For Technology Experts</Nav>
+            <Nav to="/technology">For Technology Experts</Nav>
             <Nav to="">Business</Nav>
-            <Nav to="">Enterprise</Nav>
+            <Nav to="/enterprise">Enterprise</Nav>
           </NavHolder>
           <ButtonHolder>
             <Nav to="">Apply for Jobs</Nav>
@@ -93,6 +93,7 @@ const ButtonHolder = styled.div`
 `;
 const Nav = styled(Link)`
   text-decoration: none;
+  color: black;
 `;
 
 const NavHolder = styled.div`
